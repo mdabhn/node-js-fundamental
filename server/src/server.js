@@ -8,10 +8,7 @@ const server = http.createServer(_app)
 
 async function startServer() {
   await loadData()
-
-  server.listen(PORT, () => {
-    console.log('..-....-')
-  })
+  server.listen(PORT)
 }
 
 startServer()
