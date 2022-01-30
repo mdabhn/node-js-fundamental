@@ -6,6 +6,7 @@
   "scripts": {
     "watch:server": "npm run dev --prefix server",
     "watch:client": "npm run start --prefix client",
+    "build:client": "cd ./server && rm -rf public && cd .. && npm run build --prefix client",
     "watch": "npm run watch:server & npm run watch:client"
   },
   "repository": {
