@@ -2,14 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Nasa Mission api",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node _server.js"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
     "express": "^4.17.2"
   }
 }
