@@ -1,0 +1,22 @@
+{
+  "name": "js-fundamental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:server": "npm run dev --prefix server",
+    "watch:client": "npm run start --prefix client",
+    "watch": "npm run watch:server & npm run watch:client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdabhn/node-js-fundamental.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdabhn/node-js-fundamental/issues"
+  },
+  "homepage": "https://github.com/mdabhn/node-js-fundamental#readme"
+}
