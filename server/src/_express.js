@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 app.use(cors())
 app.use(morgan('combined'))
 
-app.get('/*', (_, res) => {
+app.get('/', (_, res) => {
   res.send(path.join(__dirname, '..', 'public', 'index.html'))
 })
 

@@ -1,5 +1,7 @@
 const launches = new Map()
 
+const _id = 100
+
 const launch = {
   flightNumber: 100,
   mission: 'Keplar Exploration X',
@@ -13,6 +15,24 @@ const launch = {
 
 launches.set(launch.flightNumber, launch)
 
+function getAllLaunches() {
+  return Array.from(launches.values())
+}
+
+function createNewLaunch(launch) {
+  _id++
+  launches.set(
+    _id,
+    Object.assign(launch, {
+      flightNumber: _id,
+      upcoming: true,
+      customer: ['hossain', 'NASA'],
+      success: true,
+    })
+  )
+}
+
 module.exports = {
-  launches,
+  getAllLaunches,
+  createNewLaunch,
 }
